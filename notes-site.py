@@ -24,7 +24,7 @@ def load_note_contents(note_id):
 		f.close()
 		return s
 	else:
-		return "Welcome to your online notepad!\n\nWhatever you type here will be persistent for this notepad,\nspecified by the ID in the URL. This pad's ID is {0}.\nJust make sure to always hit that \"Save\" button at the top of the page!".format(note_id)
+		return "Welcome to your online notepad!\n\nWhatever you type here will be persistent for this notepad,\nspecified by the ID in the URL. This pad's ID is {0}.\nJust make sure to always hit that \"Save\" button at the top of the page!\n".format(note_id)
 
 
 @app.route("/")
