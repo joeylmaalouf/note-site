@@ -1,4 +1,5 @@
-from os.path import exists
+
+import os
 import random
 import string
 from flask import Flask, redirect, render_template, request
@@ -17,7 +18,7 @@ def save_note_contents(note_id, contents):
 
 def load_note_contents(note_id):
 	path = "notepads/{0}.txt".format(note_id)
-	if exists(path):
+	if os.path.exists(path):
 		f = open(path, "r")
 		s = f.read()
 		f.close()
