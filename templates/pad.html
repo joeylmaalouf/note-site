@@ -1,7 +1,11 @@
 <!DOCTYPE html>
 <title>Notepad: {{ note_id }}</title>
 <html>
-	<body style="background-color:#000000">
-		<textarea style="color:#EEEEEE; background-color:#111111; width:98vw; height:97vh; margin:auto; display:block; resize:none">{{ note_text }}</textarea>
+	<body style = "background-color:#000000">
+		<form method = "POST" action = "/save/">
+			<input type = "submit" value = "Save">
+			<input type = "hidden" name = "note_id" value = {{ note_id }}>
+			<textarea name = "notepad" style = "color:#EEEEEE; background-color:#111111; width:90vw; height:90vh; margin:auto; display:block; resize:none">{{ note_text }}</textarea>
+		</form>
 	</body>
 </html>
