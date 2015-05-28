@@ -1,2 +1,16 @@
-my dota2 hero pool: shadow fiend, meepo, nature's prophet, windranger, treant protector, ursa, pudge
-learn these heroes: antimage, slark, clockwerk, chen, dazzle, kotl
+My current DotA 2 hero pool:
+  Shadow Fiend
+  Meepo
+  Nature's Prophet
+  Windranger
+  Treant Protector
+  Ursa
+  Pudge
+
+Learn these heroes:
+  Anti-Mage
+  Slark
+  Clockwerk
+  Chen
+  Dazzle
+  Keeper of the Light
