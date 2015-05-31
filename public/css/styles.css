@@ -1,0 +1,32 @@
+@import url("fonts.css");
+
+body
+{
+	background-color: #000000;
+}
+
+textarea
+{
+	font-family: "Sintony";
+	color: #EEEEEE;
+	background-color: #111111;
+	width: 90vw;
+	height: 90vh;
+	margin: auto;
+	display: block;
+	resize: none;
+}
+
+.centered
+{
+	text-align: center;
+	margin: auto;
+	display: block;
+}
+
+.vspaced
+{
+	margin-top: 0.5%;
+	margin-bottom: 0.5%;
+}
+

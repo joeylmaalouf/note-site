@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<title>Notepad: {{notepad.id}}</title>
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css">
+		<link rel="stylesheet" type="text/css" href="/css/styles.css">
+	</head>
+	<body>
+		<form method = "POST" action = "/save/">
+			<div class="pure-menu pure-menu-horizontal centered vspaced">
+				<ul class="pure-menu-list">
+					<li class="pure-menu-item"><input type = "submit" value = "Save Notepad" class = "centered pure-button"></li>
+					<li class="pure-menu-item"><a href="https://github.com/joeylmaalouf/note-site" class="pure-button">Project Source</a></li>
+				</ul>
+			</div>
+			<input type = "hidden" name = "id" value = {{notepad.id}}>
+			<textarea name = "text">{{notepad.text}}</textarea>
+		</form>
+	</body>
+</html>
