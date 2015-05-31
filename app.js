@@ -26,6 +26,4 @@ app.post("/save", index.save);
 var PORT = process.env.PORT || 3000;
 app.listen(PORT, function() { console.log("Application running on port", PORT); });
 
-// not yet successfully hosted on http://???.herokuapp.com/
-// mongodb://noteusername:notepassword@ds041432.mongolab.com:41432/notepad-site
-// put hosted link in readme
+// successfully hosted on http://notepads.herokuapp.com/
