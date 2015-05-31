@@ -20,7 +20,7 @@ var newFn = function (req, res)
 		{id: req.params.id},
 		function (err, notepad)
 		{
-			var text = notepad ? notepad.text : "Welcome to your online notepad!\n\nWhatever you type here will be persistent for this notepad,\nspecified by the ID in the URL. This pad's ID is "+req.params.id+".\nJust make sure to always hit that \"Save\" button at the top of the page!\n";
+			var text = notepad ? notepad.text : "Welcome to your new online notepad!\n\nWhatever you type here will be persistent for this notepad,\nspecified by the ID in the URL. This pad's ID is "+req.params.id+".\nJust make sure to always hit that \"Save\" button at the top of the page!\nYou can also enter your own custom (alphanumeric) ID in the URL!\n";
 			res.render("notepad", {"notepad": {"id": req.params.id, "text": text}, "layout": false});
 		});
 };
