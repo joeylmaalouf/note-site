@@ -1,12 +1,10 @@
 @import url("fonts.css");
 
-body
-{
+body {
   background-color: #000000;
 }
 
-textarea
-{
+textarea {
   font-family: "Hack";
   color: #EEEEEE;
   background-color: #111111;
@@ -17,15 +15,13 @@ textarea
   resize: none;
 }
 
-.centered
-{
+.centered {
   text-align: center;
   margin: auto;
   display: block;
 }
 
-.vspaced
-{
+.vspaced {
   margin-top: 0.5%;
   margin-bottom: 0.5%;
 }
