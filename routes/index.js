@@ -4,7 +4,7 @@ var chance = require("chance").Chance();
 var Notepad = mongoose.model("Notepad", mongoose.Schema({
   "id": String,
   "text": String
-}));
+}), "notepads");
 
 var routes = {};
 
