@@ -18,7 +18,7 @@ routes.id = function (req, res) {
   Notepad.findOne(
     {id: req.params.id},
     function (err, notepad) {
-      if (!notepad.text) {
+      if (notepad && !notepad.text) {
         notepad.text = "Welcome to your new online notepad!\n\nWhatever you type here will be persistent for this notepad, specified by the ID in the URL.\nThis pad's ID is " + req.params.id + ".\nMake sure to always hit that \"Save\" button at the top of the page!\nYou can also enter your own custom ID in the URL!\n";
       }
       res.render("notepad", {
