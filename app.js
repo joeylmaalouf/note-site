@@ -20,8 +20,10 @@ var mongoURI = process.env.MONGOURI || "mongodb://localhost/test";
 mongoose.connect(mongoURI);
 
 app.get("/", index.home);
-app.get("/:id", index.new);
-app.post("/save", index.save);
+app.get("/:id", index.id);
+app.post("/setlock", index.setlock);
+app.post("/updatepass", index.updatepass);
+app.post("/savetext", index.savetext);
 
 var PORT = process.env.PORT || 3000;
 app.listen(PORT, function() { console.log("Application running on port", PORT); });

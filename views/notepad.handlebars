@@ -8,11 +8,15 @@
     <link rel="stylesheet" type="text/css" href="/css/styles.css">
   </head>
   <body>
-    <div class="centered vspaced">
-      <a class="pure-button" onclick="save('{{notepad.id}}');">Save Notepad</a>
+    <form class="centered vspaced pure-form">
+      {{#unless notepad.locked}}<a class="pure-button" onclick="savetext('{{notepad.id}}');">Save Notepad</a>{{/unless}}
+      {{#unless notepad.locked}}<a class="pure-button" onclick="updatepass('{{notepad.id}}');">Update Password</a>{{/unless}}
+      <input id="password" type="password" placeholder="Password">
+      {{#unless notepad.locked}}<a class="pure-button" onclick="setlock('{{notepad.id}}', true);">Lock Notepad</a>{{/unless}}
+      {{#if notepad.locked}}<a class="pure-button" onclick="setlock('{{notepad.id}}', false);">Unlock Notepad</a>{{/if}}
       <a class="pure-button" href="/">New Notepad</a>
       <a class="pure-button" href="https://github.com/joeylmaalouf/note-site">Project Source</a>
-    </div>
-    <textarea id="notepad" spellcheck="false">{{notepad.text}}</textarea>
+    </form>
+    {{#unless notepad.locked}}<textarea id="notepad" spellcheck="false">{{notepad.text}}</textarea>{{/unless}}
   </body>
 </html>
